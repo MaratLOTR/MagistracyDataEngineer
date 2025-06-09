@@ -1,12 +1,12 @@
-from sqlalchemy import Column, Integer, String, DECIMAL, BigInteger, ForeignKey
-from sqlalchemy.orm import relationship
+from sqlalchemy import DECIMAL, BigInteger, Column, ForeignKey, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import relationship
 
 Base = declarative_base()
 
 
 class City(Base):
-    __tablename__ = 'city'
+    __tablename__ = "city"
 
     # Определение полей таблицы
     id = Column(Integer, primary_key=True)
